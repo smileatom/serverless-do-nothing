@@ -1,6 +1,6 @@
 {
   "name": "serverless-do-nothing",
-  "version": "0.0.6",
+  "version": "0.0.0",
   "description": "A serverless plugin for doing nothing",
   "main": "src/index.js",
   "scripts": {

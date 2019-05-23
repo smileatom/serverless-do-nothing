@@ -1,0 +1,54 @@
+{
+  "extends": "airbnb-base",
+  "plugins": [
+    "import",
+    "mocha"
+  ],
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "chai": true,
+    "proxyquire": true
+  },
+  "rules": {
+    "max-len": [
+      1,
+      120,
+      2
+    ],
+    "class-methods-use-this": 0,
+    "no-param-reassign": 0,
+    "prefer-promise-reject-errors": 0,
+    "consistent-return": 0,
+    "mocha/no-mocha-arrows": "error",
+    "no-console": 0,
+    "semi": 1,
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": false
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ]
+  }
+}

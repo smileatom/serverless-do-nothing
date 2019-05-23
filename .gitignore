@@ -1,0 +1,24 @@
+# package directories
+/node_modules/
+/jspm_packages/
+/.config/
+/.cache/
+/coverage/
+/.nyc_output/
+/docs/
+/.yarnrc
+/yarn.lock
+
+.bash_history
+
+# IntelliJ IDEA
+/.idea/
+*.iml
+.editorconfig
+.npm
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+/.npm

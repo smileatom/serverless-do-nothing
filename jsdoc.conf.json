@@ -1,0 +1,40 @@
+{
+  "tags": {
+    "allowUnknownTags": false
+  },
+  "source": {
+    "include": ["src"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "opts": {
+    "template": "node_modules/docdash",
+    "encoding": "utf8",
+    "destination": "docs/",
+    "recurse": true,
+    "verbose": true
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "docdash": {
+    "sectionOrder": [
+      "Modules"
+    ],
+    "search": true,
+    "sort": true,
+    "collapse": false,
+    "menu": {
+      "Github": {
+        "href": "https://github.com/waveatom/serverless-do-nothing",
+        "target": "_blank",
+        "class": "menu-item",
+        "id": "website_link"
+      }
+    }
+  }
+}

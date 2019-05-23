@@ -1,0 +1,56 @@
+{
+  "name": "serverless-do-nothing",
+  "version": "0.0.6",
+  "description": "A serverless plugin for doing nothing",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nyc mocha",
+    "badge": "MOCHA_BADGE_GEN_SUBJECT=tests nyc mocha --reporter mocha-badge-generator",
+    "lint": "eslint --fix --ext .js ./test ./src",
+    "doc": "jsdoc -c ./jsdoc.conf.json -R README.md",
+    "build": "np patch --no-publish",
+    "release": "np patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waveatom/serverless-do-nothing"
+  },
+  "keywords": [
+    "serverless",
+    "plugin"
+  ],
+  "author": "waveatom",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "docdash": "^1.0.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-mocha": "^5.2.0",
+    "jsdoc": "~3.5.5",
+    "mocha": "^5.2.0",
+    "mocha-badge-generator": "^0.2.2",
+    "mocha-jshint": "^2.3.1",
+    "mocha-junit-reporter": "^1.18.0",
+    "np": "*",
+    "nyc": "^13.3.0"
+  },
+  "dependencies": {
+    "serverless": "^1.29.2",
+    "bluebird": "^3.4.0"
+  },
+  "nyc": {
+    "reporter": [
+      "html"
+    ],
+    "check-coverage": true,
+    "lines": 99,
+    "statements": 99,
+    "functions": 100,
+    "branches": 90,
+    "exclude": [
+      "test/**/*.spec.js"
+    ]
+  }
+}
